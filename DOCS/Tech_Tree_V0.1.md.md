@@ -1,7 +1,8 @@
 # The Reclamation Cycle: Tech Tree V0.1
 
-**Location:** DOCS/
 **Purpose:** Define the starting tier buildings and resource trade-offs for the two core development paths: Restoration (Old World) vs. Adaptation (New World).
+
+![Comparison between an Old World structure and a New World structure](./../IMAGES/two-ways.png "Two ways of development")
 
 ---
 
@@ -57,4 +58,3 @@ Certain high-value salvaged items are critical and often non-renewable.
 ## 4. Next Steps
 
 * **DOCS/Scenarios/Scenario\_Contamination.md:** Detail how the contamination event specifically impacts the *salvage rate* and *maintenance cost* of high-tech Old World components.
-* **ISSUES:** Create tracking issues for specific resource recipes (e.g., how many Motors are required for a Tier 3 Restoration building).

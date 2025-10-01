@@ -1,7 +1,8 @@
 # Scenario: The Contamination (Fungal/Viral Collapse)
 
-**Location:** DOCS/Scenarios/
 **Purpose:** Define how the Fungal/Viral/Infection collapse scenario alters the core gameplay challenges, resource availability, and primary threats.
+
+![Contamination](./../../IMAGES/contamination.png "Contamination")
 
 ---
 

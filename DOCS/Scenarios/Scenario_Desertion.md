@@ -1,7 +1,8 @@
 # Scenario: The Desertion (Climate/Drought Collapse)
 
-**Location:** DOCS/Scenarios/
 **Purpose:** Define how a catastrophic climate event (Drought, Extreme Heat, Desertification) alters core gameplay challenges, resource availability, and primary threats.
+
+![Desertion](./../../IMAGES/desertion.png "Desertion")
 
 ---
 

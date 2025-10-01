@@ -1,7 +1,8 @@
 # Scenario: The Silence (Technological Collapse)
 
-**Location:** DOCS/Scenarios/
 **Purpose:** Define how a global technological collapse (e.g., permanent EMP, AI failure, nanotech decay) affects gameplay by rendering all high-tech electronics useless and non-repairable.
+
+![Silence](./../../IMAGES/silence.png "Silence")
 
 ---
 

@@ -4,6 +4,8 @@
 
 **Logline:** A post-apocalyptic **Logistics and Restoration Simulation** where the greatest challenge isn't surviving the collapse, but choosing the foundational principles—modern steel or sustainable wood—of the civilization you rebuild.
 
+![Scene depicting a small, resilient settlement nestled within the ruins of a city, highlighting the contrast between decay and new growth](./IMAGES/main.png "New start among decay")
+
 ---
 
 ## The Core Concept

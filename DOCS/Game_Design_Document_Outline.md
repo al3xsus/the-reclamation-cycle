@@ -1,7 +1,8 @@
 # The Reclamation Cycle: GDD Outline (V0.1)
 
-**Location:** DOCS/
 **Purpose:** Define the core gameplay loop, systems, and win conditions.
+
+![Blueprints](./../IMAGES/gdd.png "Blueprints")
 
 ---
 
@@ -72,4 +73,3 @@ The player must guide the settlement through three distinct phases, each defined
 
 * **DOCS/Tech\_Tree\_V0.1.md:** Detailed recipes, component requirements, and technology divergence for the Dual Paths.
 * **DOCS/Scenarios/Scenario\_Contamination.md:** Specific mechanics, threats, and resource impacts of the first proposed scenario.
-* **ISSUES:** Tracking specific mechanics design and discussion points (e.g., Railbus recipes, Combat integration, Feral Animal behavior).
