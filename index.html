@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>The Reclamation Cycle | Post-Apocalyptic Logistics & Restoration Sim Design</title>
+    <meta name="description" content="A concept design project for a post-apocalyptic Logistics & Restoration Simulation. Focuses on deep recycling mechanics and the choice between sustainable Adaptation and efficient Restoration.">
+    <meta name="keywords" content="game design, city-builder, logistics simulation, post-apocalyptic, resource management, restoration, tech tree, gamedev, concept design">
+    <meta name="author" content="al3xsus">
+    
+    <meta property="og:title" content="The Reclamation Cycle | Restoration Sim Design">
+    <meta property="og:description" content="A unique GDD focusing on resource reclamation and strategic choice in a post-apocalyptic city-builder.">
+    <meta property="og:image" content="./IMAGES/main.png">
+    <meta property="og:url" content="https://al3xsus.github.io/the-reclamation-cycle/">
+
+    <style>
+        /* Basic Resets and Variables */
+        :root {
+            --color-primary: #4CAF50; /* Green for new life/adaptation */
+            --color-secondary: #546E7A; /* Grey/Blue for ruins/steel */
+            --color-background: #f4f4f4;
+            --color-text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: var(--color-secondary);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+        .pitch {
+            font-size: 1.25em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .content-section {
+            padding: 40px 0;
+        }
+        h2 {
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .feature-card h3 {
+            color: var(--color-secondary);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px 10px 10px 0;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #388E3C;
+        }
+        .image-showcase img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: var(--color-secondary);
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Reclamation Cycle</h1>
+            <h2>Post-Apocalyptic Logistics & Restoration Simulation</h2>
+            <p class="pitch">The challenge isn't surviving the collapse, but choosing the foundational principles—modern steel or sustainable wood—of the civilization you rebuild.</p>
+            <a href="./DOCS/Game_Design_Document_Outline.md" class="cta-button">Read the Full Design Outline 💡</a>
+            <a href="https://github.com/al3xsus/the-reclamation-cycle/issues" class="cta-button" style="background-color: #D32F2F;">Join the Design Discussion 💬</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="content-section">
+            <h2>The Core Conflict: Choose Your Future</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Old World Path (Restoration)</h3>
+                    <p>Focuses on restoring high-efficiency, complex **modern infrastructure** using salvaged components. **Trade-off:** High density and efficiency, but dependent on non-renewable salvage and high maintenance.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>New World Path (Adaptation)</h3>
+                    <p>Focuses on low-tech, self-sustaining structures using **local, renewable materials**. **Trade-off:** High resilience and low maintenance, but lower efficiency and population density.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>The Reclamation Loop</h3>
+                    <p>A multi-tiered **recycling mechanic** where every piece of old-world junk must be meticulously disassembled, refined, or upcycled into usable building materials.</p>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="content-section image-showcase">
+            <h2>Scenario Showcase: Variable Apocalypses</h2>
+            <p>High replayability is achieved through selectable starting scenarios that fundamentally alter resource availability and primary threats.</p>
+            
+            <h3>The Desertion (Climate/Drought Collapse)</h3>
+            <img src="./IMAGES/desertion.png" alt="Image depicting the Desertion Scenario with cracked earth and desperate water collection.">
+            <p>The struggle is against **Water Scarcity, Heat, and Sand**. Logistics must prioritize cooling and highly efficient irrigation over all else.</p>
+            
+            <h3>The Contamination (Fungal/Viral Collapse)</h3>
+            <img src="./IMAGES/contamination.png" alt="Image depicting the Contamination Scenario with isolation and biohazard efforts.">
+            <p>The struggle is against **Disease, Spores, and Tainted Resources**. Focus shifts to Sanitation, Filtration, and organized defense.</p>
+        </div>
+
+        <hr>
+
+        <div class="content-section">
+            <h2>Documentation & Contribution</h2>
+            <p>This is an open design project. We use GitHub's tools for transparency and collaboration.</p>
+            <ul>
+                <li>**Game Design Document:** Found in the <code>DOCS/</code> folder.</li>
+                <li>**Tech Tree Outline:** Compare the two paths in <code>DOCS/Tech_Tree_V0.1.md</code>.</li>
+                <li>**Contribute Ideas:** Use the **Issues** tab to submit design feedback, new features, or technical questions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 The Reclamation Cycle Project. View source code on GitHub.
+    </footer>
+</body>
+</html>
