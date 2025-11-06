@@ -74,11 +74,17 @@
 
         /* --- Header / Hero Section --- */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('[URL_TO_RECLAIMED_CITY_IMAGE]') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./IMAGES/reclaimed-city.webp') center/cover no-repeat; /* Updated with webp */
             color: var(--color-text-light);
             padding: 100px 0;
             text-align: center;
             position: relative;
+        }
+        /* Fallback for hero background if webp not supported or as a good practice */
+        @supports not (background-image: url('./IMAGES/reclaimed-city.webp')) {
+            .hero {
+                background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./IMAGES/reclaimed-city.png') center/cover no-repeat;
+            }
         }
         .hero-content {
             max-width: 800px;
@@ -153,7 +159,7 @@
             margin-top: 50px;
             text-align: center;
         }
-        .image-showcase img {
+        .image-showcase picture, .image-showcase img { /* Apply styles to both picture and img */
             width: 100%;
             height: auto;
             max-height: 550px; /* Constrain height for consistency */
@@ -184,7 +190,7 @@
             margin-bottom: 30px;
             font-size: 1.1em;
         }
-        .gdd-section img {
+        .gdd-section picture, .gdd-section img { /* Apply styles to both picture and img */
             max-width: 80%;
             height: auto;
             border-radius: var(--border-radius-soft);
@@ -237,7 +243,10 @@
             <p style="text-align: center; font-size: 1.1em; margin-bottom: 40px;">Decades after a world-ending event, humanity stands at a crossroads. Will you rebuild the remnants of the old world with its complex efficiency, or forge a new, sustainable future from local resources?</p>
             
             <div class="image-showcase">
-                <img src="./IMAGES/two-ways.png" alt="Comparison of Old World Restoration vs. New World Adaptation structures.">
+                <picture>
+                    <source srcset="./IMAGES/two-ways.webp" type="image/webp">
+                    <img src="./IMAGES/two-ways.png" alt="Comparison of Old World Restoration vs. New World Adaptation structures.">
+                </picture>
                 <p class="caption">The stark choice: efficient but fragile old world technology vs. resilient, sustainable new world designs.</p>
             </div>
 
@@ -262,15 +271,24 @@
             <p style="text-align: center; font-size: 1.1em; margin-bottom: 40px;">Three distinct world-ending scenarios fundamentally alter resource availability, available threats, and logistical challenges, ensuring every playthrough is unique.</p>
             
             <h3>The Contamination (Fungal/Viral Collapse)</h3>
-            <img src="./IMAGES/contamination.png" alt="Image depicting the Contamination Scenario with isolation and biohazard efforts.">
+            <picture>
+                <source srcset="./IMAGES/contamination.webp" type="image/webp">
+                <img src="./IMAGES/contamination.png" alt="Image depicting the Contamination Scenario with isolation and biohazard efforts.">
+            </picture>
             <p class="caption">The struggle is against **Disease, Spores, and Tainted Resources**. Focus shifts to Sanitation, Filtration, and organized defense within sealed environments.</p>
             
             <h3>The Desertion (Climate/Drought Collapse)</h3>
-            <img src="./IMAGES/desertion.png" alt="Image depicting the Desertion Scenario with cracked earth and desperate water collection in a European city.">
+            <picture>
+                <source srcset="./IMAGES/desertion.webp" type="image/webp">
+                <img src="./IMAGES/desertion.png" alt="Image depicting the Desertion Scenario with cracked earth and desperate water collection in a European city.">
+            </picture>
             <p class="caption">A world scarred by **Water Scarcity, Extreme Heat, and Dust**. Logistics must prioritize cooling, efficient irrigation, and resilient, insulated structures in familiar cityscapes.</p>
 
             <h3>The Silence (Technological Collapse)</h3>
-            <img src="./IMAGES/silence.png" alt="Image depicting the Silence Scenario with steam power and mechanical reliance in an old European city.">
+            <picture>
+                <source srcset="./IMAGES/silence.webp" type="image/webp">
+                <img src="./IMAGES/silence.png" alt="Image depicting the Silence Scenario with steam power and mechanical reliance in an old European city.">
+            </picture>
             <p class="caption">All advanced electronics are dead, forever. Rebuild with **Mechanical Ingenuity, Steam Power, and Manual Labor**, where skilled craftspeople are the most valuable resource.</p>
         </div>
 
@@ -278,7 +296,10 @@
             <div class="container">
                 <h2>Behind the Vision: The Game Design Document</h2>
                 <p>Dive deep into the mechanics, systems, and lore that drive The Reclamation Cycle. This project is built on transparent, detailed design documentation.</p>
-                <img src="./IMAGES/gdd.png" alt="Image depicting game design blueprints and documents.">
+                <picture>
+                    <source srcset="./IMAGES/gdd.webp" type="image/webp">
+                    <img src="./IMAGES/gdd.png" alt="Image depicting game design blueprints and documents.">
+                </picture>
                 <p>Explore the full Game Design Document Outline, detailed Tech Trees, and individual Scenario specifications directly on our GitHub repository.</p>
                 <a href="./DOCS/Game_Design_Document_Outline.md" class="cta-button">Read the GDD Outline</a>
                 <a href="./DOCS/Tech_Tree_V0.1.md" class="cta-button secondary">See the Tech Tree</a>

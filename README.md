@@ -58,3 +58,7 @@ Conflict is not the primary focus but an integral part of high-stakes resource r
 This repository will serve as the central hub for design, documentation, and asset tracking.
 
 * Check the **DOCS/** folder for detailed design outlines and scenario specs.
+
+---
+
+> 🖼️ This repository includes a social preview image for enhanced link sharing.
